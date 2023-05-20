@@ -1,0 +1,35 @@
+@-webkit-keyframes kedip{
+	from{opacity: 1.0:}
+	to{opacity: 0.0;}
+}
+.healing h1{
+	text-align: center;
+	color:blue;
+	text-decoration: blink;
+	-webkit-animation-name: kedip;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+.phl p{
+	font-family: comic-sans;
+	text-align: right;
+	color:purple;
+}
+.ph2 p{
+	font-family: Arial;
+	text-align: left;
+	color:red;
+}
+.ph3 p{
+	font-family: Arial;
+	text-align: left;
+	color:red;
+}
+.ph3 p{
+	font-family: Verdana;
+	text-align:center;
+	color:green;
+	font-style: ilalic;
+}

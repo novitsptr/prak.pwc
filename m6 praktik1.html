@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="index.php" method="post">
+                <h2>DATA IDENTITAS</h2>
+                <hr>
+                <label for="fnama">Nama : </label>
+                <input type="text" name="fnama" id="fnama">
+                
+                <label for="lalamat">Alamat : </label>
+                <input type="text" name="lalamat" id="lalamat">
+               
+                <!-- kode program modul 6 mulai baris ini -->
+                <p>
+                    <label for="jkel">Jenis Kelamin : </label>
+                    <input type="radio" name="jkel" id="laki-laki" value="Laki-laki">Laki-Laki
+                    <input type="radio" name="jkel" id="perempuan" value="Perempuan">Perempuan
+                </p>
+
+                <p>
+                    <label for="prodi">Program Studi : </label>
+                    <select name="prodi" id="prodi">
+                        <option value="SI">SI</option>
+                        <option value="TI">TI</option>
+                        <option value="TK">TK</option>
+                        <option value="KA">KA</option>
+                        <option value="MI">MI</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="hobi">Hobi : </label>
+                    <input type="checkbox" name="cekhobi[]" id="cksing" value="Menyanyi">
+                    <label for="cksing">Menyanyi</label>
+                    <input type="checkbox" name="cekhobi[]" id="ckolah" value="Olahraga">
+                    <label for="ckolah">Olahraga</label>
+                </p>
+
+                <input type="submit" name="submit" id="submit" value="Save">
+            </form>
+            <?php include "proses.php" ?>
+        </div>
+    </div>
+</body>
+</html>

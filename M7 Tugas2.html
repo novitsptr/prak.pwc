@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2</title>
+</head>
+
+<body>
+    <div class="konten">
+        <form action="konfirmasi.html" method="get">
+            <table border="1">
+                <tbody>
+                    <!-- sebutan -->
+                    <tr>
+                        <td>Sebutan :</td>
+                        <td>
+                            <select name="sebutan" id="sebutan">
+                                <option value="saudara">Saudara</option>
+                                <option value="tuan">Tuan/Tn</option>
+                                <option value="nyonya">Nyonya/Ny</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- nama -->
+                    <tr>
+                        <td>Nama :</td>
+                        <td><input type="text" name="nama" id="nama"></td>
+                    </tr>
+                    <!-- Jenis Kelamin -->
+                    <tr>
+                        <td>Jns kel :</td>
+                        <td>
+                            <input type="radio" name="jenkel" id="laki-laki" value="laki-laki">Laki-Laki
+                            <input type="radio" name="jenkel" id="perempuan" value="perempuan">Perempuan
+                        </td>
+                    </tr>
+                    <!-- Alamat -->
+                    <tr>
+                        <td>Alamat :</td>
+                        <td>
+                            <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <!-- Tabungan -->
+                    <tr>
+                        <td>Tabungan :</td>
+                        <td>
+                            <input type="checkbox" name="tabungan[]" id="taplus"> BNI TAPLUS <br>
+                            <input type="checkbox" name="tabungan[]" id="taplus_mahasiswa"> BNI TAPLUS Mahasiswa <br>
+                            <input type="checkbox" name="tabungan[]" id="syariah"> BNI Syariah
+                        </td>
+                    </tr>
+                    <!-- submit -->
+                    <tr>
+                        <td colspan="2"><button type="submit">Go</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
